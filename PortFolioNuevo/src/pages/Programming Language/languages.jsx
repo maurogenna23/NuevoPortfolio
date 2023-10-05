@@ -8,7 +8,7 @@ import imagen6 from "../../../public/assets/react.jpg";
 import imagen7 from "../../../public/assets/redux.jpg";
 import imagen8 from "../../../public/assets/bootstrap.jpg";
 import imagen9 from "../../../public/assets/git.jpg";
-import imagen10 from "../../../public/assets/nextJS.png"
+import imagen10 from "../../../public/assets/nextjs.png"
 import imagen11 from "../../../public/assets/Tailwind.png"
 import Image from "next/image";
 import styles from "./language.module.css";

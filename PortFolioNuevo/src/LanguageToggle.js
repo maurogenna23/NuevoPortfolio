@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from './contexts/LanguageContext';
 import styles from './styles.module.css';
 import Image from 'next/image';
-import English from '../../public/assets/English.png'
-import España from '../../public/assets/españa.png'
+import English from '../public/assets/English.png'
+import España from '../public/assets/españa.png'
 
 const LanguageToggle = () => {
     const { toggleLanguage, currentLanguage } = useLanguage();

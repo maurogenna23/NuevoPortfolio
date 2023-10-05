@@ -9,7 +9,7 @@ import Languages from '../pages/Programming Language/languages';
 import Image from 'next/image';
 import { useLightMode } from '../LightModeContext';
 import { useLanguage } from '../contexts/LanguageContext';
-import LanguageToggle from '../Components/LanguageToggle';
+import LanguageToggle from '../LanguageToggle';
 import enTranslations from '../locales/en';
 import esTranslations from '../locales/es';
 

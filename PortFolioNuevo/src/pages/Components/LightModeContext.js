@@ -3,7 +3,7 @@ import { createContext, useContext, useState, useEffect } from 'react';
 
 const LightModeContext = createContext();
 
-export const LightModeProvider = ({ children }) => {
+const LightModeProvider = ({ children }) => {
     const [lightMode, setLightMode] = useState(false);
 
     // Almacenar el modo claro en localStorage para persistencia
@@ -30,6 +30,9 @@ export const LightModeProvider = ({ children }) => {
     );
 };
 
-export const useLightMode = () => {
+const useLightMode = () => {
     return useContext(LightModeContext);
 };
+
+export { LightModeProvider, useLightMode };
+

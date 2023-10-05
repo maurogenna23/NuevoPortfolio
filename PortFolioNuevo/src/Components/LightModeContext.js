@@ -30,10 +30,8 @@ const LightModeProvider = ({ children }) => {
     );
 };
 
-const useLightMode = () => {
+export const useLightMode = () => {
     return useContext(LightModeContext);
 };
 
-export { LightModeProvider as default, useLightMode };
-
-
+export default LightModeProvider;

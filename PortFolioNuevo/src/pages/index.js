@@ -7,7 +7,7 @@ import Proyectos from '../pages/Proyects/proyect';
 import ContactForm from '../pages/Contact/contact';
 import Languages from '../pages/Programming Language/languages';
 import Image from 'next/image';
-import { useLightMode } from '../Components/LightModeContext';
+import { useLightMode } from '../LightModeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageToggle from '../Components/LanguageToggle';
 import enTranslations from '../locales/en';

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './certificaciones.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useLightMode } from '../../Components/LightModeContext';
+import { useLightMode } from '../../LightModeContext';
 import imagen1 from '../../../public/assets/imagen1.png';
 import { useLanguage } from '../../contexts/LanguageContext';
 import enTranslations from '../../locales/en';

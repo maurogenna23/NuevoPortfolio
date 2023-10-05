@@ -1,5 +1,5 @@
 import React from "react";
-import { useLightMode } from '../../Components/LightModeContext';
+import { useLightMode } from '../../LightModeContext';
 
 const Footer = () => {
 

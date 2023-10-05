@@ -1,0 +1,122 @@
+.containerAbout {
+    width: 100%;
+    /* Cambiamos el ancho al 100% para ocupar todo el ancho disponible */
+    max-width: 800px;
+    /* Establecemos un ancho máximo para evitar que crezca demasiado en pantallas grandes */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: auto;
+    /* Cambiamos la altura a "auto" para adaptarse al contenido */
+}
+
+.textContainer {
+    background-color: #40916c;
+    padding: 5%;
+    margin-right: 0;
+    /* Eliminamos el margen derecho para que ocupe todo el ancho en pantallas pequeñas */
+    margin-bottom: 20px;
+    /* Agregamos un margen inferior para separar el texto de la imagen */
+    border-radius: 15px;
+    color: white;
+}
+
+.imagen {
+    position: relative;
+    /* Cambiamos la posición a "relative" para que no se salga del flujo normal del contenido */
+    max-width: 100%;
+    /* Ajustamos la imagen al ancho del contenedor */
+}
+
+.imagen img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.title h2 {
+    color: #1b4332;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.containerAbout p {
+    font-size: 18px;
+}
+
+.ingles,
+.italiano {
+    background-color: #2d6a4f;
+    width: 30%;
+    /* Ajustamos el ancho al 100% para que ocupe todo el ancho disponible */
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* Agregamos un margen inferior para separar los botones */
+}
+
+.btn {
+    width: 100%;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: #1b4332;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    /* z-index: 1; */
+    overflow: hidden;
+}
+
+/* Los estilos de hover y el pseudo-elemento :after se mantienen igual */
+
+/* Media Queries para pantallas pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+    .containerAbout {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .subContainer {
+        height: auto;
+    }
+
+    .textContainer {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .ingles,
+    .italiano {
+        width: 50%;
+    }
+}

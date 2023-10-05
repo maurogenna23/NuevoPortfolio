@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #1f2028;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 50vh;
+  }
+}
+
+
+@responsive {
+  .animate-expand {
+    animation: expand 1s ease-out;
+  }
+
+  .expanded {
+    animation: expand 2.5s ease-out;
+  }
+}

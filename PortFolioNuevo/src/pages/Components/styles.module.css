@@ -1,0 +1,55 @@
+.toggle_switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+    margin: 10px;
+}
+
+.switch_label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+    overflow: hidden;
+    /* Para ocultar partes de la imagen que salen del contenedor */
+}
+
+.checkbox {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: 0.3s;
+}
+
+.slider img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+}
+
+.checkbox:checked~.slider {
+    transform: translateX(-50%);
+    /* Mueve el contenedor de imágenes al 100% de su ancho */
+}
+
+@media only screen and (max-width: 767px) {
+    .toggle_switch {
+        width: 80px;
+        /* Ajusta según sea necesario */
+    }
+
+}

@@ -12,7 +12,7 @@ import imagen10 from "../../../public/assets/nextjs.png"
 import imagen11 from "../../../public/assets/Tailwind.png"
 import Image from "next/image";
 import styles from "./language.module.css";
-import { useLightMode } from '../Components/LightModeContext';
+import { useLightMode } from '../../Components/LightModeContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 import enTranslations from '../../locales/en';
 import esTranslations from '../../locales/es';

@@ -3,7 +3,7 @@ import '@/styles/globals.css';
 import Navbar from './NavBar/navBar';
 import Footer from './Footer/footer';
 import Head from 'next/head';
-import { LightModeProvider } from './Components/LightModeContext';
+import { LightModeProvider } from '../Components/LightModeContext';
 import { LanguageProvider } from '../contexts/LanguageContext';
 
 export default function App({ Component, pageProps }) {

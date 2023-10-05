@@ -1,6 +1,6 @@
 import imagen from '../../../public/assets/fotoLinkedin.jpg'
 import Image from 'next/image';
-import { useLightMode } from '../Components/LightModeContext';
+import { useLightMode } from '../../Components/LightModeContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 import enTranslations from '../../locales/en';
 import esTranslations from '../../locales/es';

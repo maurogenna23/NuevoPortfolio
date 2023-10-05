@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import enTranslations from '../../locales/en';
 import esTranslations from '../../locales/es';
-import { useLightMode } from '../Components/LightModeContext';
+import { useLightMode } from '../../Components/LightModeContext';
 
 
 const Navbar = () => {

@@ -34,5 +34,6 @@ const useLightMode = () => {
     return useContext(LightModeContext);
 };
 
-export { LightModeProvider, useLightMode };
+export { LightModeProvider as default, useLightMode };
+
 

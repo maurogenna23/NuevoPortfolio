@@ -100,7 +100,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {menuOpen && (
-                    <div className="md:hidden transition duration-300 bg-opacity-50 backdrop-blur-sm animate-expand">
+                    <div className="md:hidden transition duration-300 animate-expand">
                         <ScrollLink to="home" smooth={true} duration={1000}>
                             <p className={`flex items-center text-lg font-medium p-1 hover:opacity-50 animated animate__fadeIn animate-expand-delayed-0 ${lightMode ? '' : 'text-gray-300'}`} onClick={closeMenu}>
                                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" className="mr-2 mb-1" style={{ fill: lightMode ? '' : '#718096' }}>

@@ -23,6 +23,18 @@ const Navbar = () => {
     const { currentLanguage } = useLanguage();
     const translations = currentLanguage === 'en' ? enTranslations : esTranslations;
 
+    const redirectToLinkedIn = () => {
+        window.open('https://www.linkedin.com/in/mauro-genna-777a84237/', '_blank');
+    };
+
+    const redirectToGitHub = () => {
+        window.open('https://github.com/maurogenna23', '_blank');
+    };
+
+    const redirectToWhatsApp = () => {
+        window.open('https://api.whatsapp.com/send?phone=2616976887', '_blank');
+    };
+
     return (
         <div>
             <nav className={`w-full fixed top-0 z-10 bg-opacity-50 backdrop-blur-sm ${lightMode ? 'bg-white' : 'bg-black'}`}>
@@ -69,13 +81,13 @@ const Navbar = () => {
 
                     <div className={`flex space-x-4 ${lightMode ? 'text-gray-500' : 'text-gray-400'}`}>
                         <Link href="ttps://www.linkedin.com/in/mauro-genna-777a84237/" className="cursor-pointer relative inline-block text-lg font-medium p-1 hover:text-linkedin transition duration-300 hover:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-linkedin after:absolute after:bottom-0 after:left-0 after:w-full after:transition-transform after:duration-300 after:transform after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left">
-                            <i className="fab fa-linkedin fa-2x sm:fa-x"></i>
+                            <i className="fab fa-linkedin fa-2x sm:fa-x" onClick={redirectToLinkedIn}></i>
                         </Link>
                         <Link href="ttps://github.com/maurogenna23" className={`cursor-pointer relative inline-block text-lg font-medium p-1 transition duration-300 hover:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:absolute after:bottom-0 after:left-0 after:w-full after:transition-transform after:duration-300 after:transform after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left ${lightMode ? ' hover:text-gray-400' : ' hover:text-white'}`}>
-                            <i className="fab fa-github fa-2x"></i>
+                            <i className="fab fa-github fa-2x" onClick={redirectToGitHub}></i>
                         </Link>
                         <Link href="ttps://api.whatsapp.com/send?phone=2616976887" className="cursor-pointer relative inline-block text-lg font-medium p-1  hover:text-green-500 transition duration-300 hover:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-green-500 after:absolute after:bottom-0 after:left-0 after:w-full after:transition-transform after:duration-300 after:transform after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left">
-                            <i className="fab fa-whatsapp fa-2x"></i>
+                            <i className="fab fa-whatsapp fa-2x" onClick={redirectToWhatsApp}></i>
                         </Link>
                     </div>
 

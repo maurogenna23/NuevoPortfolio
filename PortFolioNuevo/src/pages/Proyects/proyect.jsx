@@ -3,14 +3,12 @@ import ReactPaginate from 'react-paginate';
 import codeCommunityImg from '../../../public/assets/CodeCommunity.png'
 import piDogImg from '../../../public/assets/Pi_Dogs.png'
 import Bambú from '../../../public/assets/Bambú.png'
-import AGI from '../../../public/assets/Agi-inicio.png'
+import AGI from '../../../public/assets/Agi.png'
 import Image from 'next/image';
 import { useLightMode } from '../../LightModeContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 import enTranslations from '../../locales/en';
 import esTranslations from '../../locales/es';
-
-
 
 
 const Proyectos = () => {

@@ -15,7 +15,6 @@ function ContactForm() {
     const { currentLanguage } = useLanguage();
     const translations = currentLanguage === 'en' ? enTranslations : esTranslations;
 
-
     if (state.succeeded) {
         return (
             <div className='flex flex-col-reverse lg:flex-row mt-10 lg:mt-40'>

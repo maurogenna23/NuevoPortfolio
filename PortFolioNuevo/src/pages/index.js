@@ -67,7 +67,6 @@ const Home = () => {
             </label>
           </div>
           <LanguageToggle />
-
         </div>
         <div className="flex flex-col lg:flex-row rounded-lg mb-4 md:mb-44 items-center">
           <div className="w-full xl:w-1/2 p-4 md:p-24 mt-6 xl:text-left">
@@ -98,7 +97,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
 
       <hr className={`w-4/5 mx-auto ${lightMode ? 'border-t-2 border-gray-700 bg-gray-800' : 'border-t-2 border-gray-300 bg-gray-100'
         }`} />

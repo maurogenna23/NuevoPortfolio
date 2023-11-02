@@ -38,6 +38,10 @@ const enTranslations = {
             descripcion:
                 'It is a project from a Pyme called Bambú that uses technologies like React, Next.js, and Tailwind CSS. This project has a section for contact with a form, different sections about the services of the company, and a home with testimonies, the companies they work with, and a description of the company.',
         },
+        proyect4: {
+            descripcion:
+                'It is a project from a real state called AGI Gestión Inmobiliaria that uses technologies like React, Next.js, and Tailwind CSS. This project has a section for contact with a form, a section about the rent and condominium, and an about the company.',
+        },
         readMore: 'Read more',
         readLess: 'Read less ',
         ButtonA: 'View project'

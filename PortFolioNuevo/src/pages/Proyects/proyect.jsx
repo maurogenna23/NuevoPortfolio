@@ -3,6 +3,7 @@ import ReactPaginate from 'react-paginate';
 import codeCommunityImg from '../../../public/assets/CodeCommunity.png'
 import piDogImg from '../../../public/assets/Pi_Dogs.png'
 import Bambú from '../../../public/assets/Bambú.png'
+import AGI from '../../../public/assets/Agi-inicio.png'
 import Image from 'next/image';
 import { useLightMode } from '../../LightModeContext';
 import { useLanguage } from '../../contexts/LanguageContext';
@@ -58,6 +59,13 @@ const Proyectos = () => {
             descripcion: translations.proyect.proyect3.descripcion,
             link: 'https://bambu-revelazquez.vercel.app/',
             img: Bambú
+        },
+        {
+            id: 3,
+            titulo: 'AGI',
+            descripcion: translations.proyect.proyect4.descripcion,
+            link: 'https://agi-inmobiliaria.vercel.app/',
+            img: AGI
         }
     ];
 
@@ -72,7 +80,7 @@ const Proyectos = () => {
                 <h2 className="text-4xl font-bold text-center text-green-400 mb-10">{translations.proyect.title}</h2>
             </div>
             {proyectosAMostrar.map((proyecto) => (
-                <div key={proyecto.id} className={`mb-8 rounded-lg shadow-lg p-5 border rounded-md ${lightMode ? 'bg-black bg-opacity-80' : 'bg-white'}`}>
+                <div key={proyecto.id} className={`mb-8 shadow-lg p-5 border rounded-md ${lightMode ? 'bg-black bg-opacity-80' : 'bg-white'}`}>
 
                     <Image
                         src={proyecto.img}

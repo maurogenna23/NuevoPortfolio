@@ -39,6 +39,10 @@ const esTranslations = {
             descripcion:
                 'Es un proyecto de una Pyme llamada Bambú que utiliza tecnologías como React, Next.js y Tailwind CSS. Este proyecto tiene una sección de contacto con un formulario, diferentes secciones sobre los servicios de la empresa y un hogar con testimonios, las empresas con las que trabajan y una descripción de la empresa.',
         },
+        proyect4: {
+            descripcion:
+                'Es un proyecto de una agencia inmobiliaria llamada AGI Gestión Inmobiliaria que utiliza tecnologías como React, Next.js y Tailwind CSS. Este proyecto tiene una sección de contacto con un formulario, una sección sobre alquiler y condominio, y una sección acerca de la descripción de la empresa.',
+        },
         readMore: 'Leer más',
         readLess: 'Leer menos',
         ButtonA: 'Ver proyecto'

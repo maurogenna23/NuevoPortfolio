@@ -87,7 +87,7 @@ const Home = () => {
             <Image
               src={imagen}
               alt="Imagen de Home"
-              className="w-full md:w-3/4 h-2/4 mt-4 xl:mt-40 rounded-full brightness-200"
+              className="w-full md:w-3/4 h-2/4 mt-4 xl:mt-40 rounded-full brightness-200 p-2 sm:p-0"
             />
           </div>
         </div>

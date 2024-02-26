@@ -18,8 +18,8 @@ const Proyectos = () => {
     const { lightMode, toggleLightMode } = useLightMode();
     const [expandedProyectos, setExpandedProyectos] = useState({});
 
-    const proyectosPorPagina = 1; // Cantidad de proyectos por página
-    const [paginaActual, setPaginaActual] = useState(0); // Comienza en 0 para el índice
+    const proyectosPorPagina = 1;
+    const [paginaActual, setPaginaActual] = useState(0);
 
     const handlePaginaCambio = (data) => {
         const paginaSeleccionada = data.selected;
@@ -73,7 +73,7 @@ const Proyectos = () => {
     );
 
     return (
-        <div className="container mx-auto mt-10 my-8 p-2">
+        <div className="container mx-auto p-2 mt-40 mb-40">
             <div className="text-center mb-8">
                 <h2 className="text-4xl font-bold text-center text-green-400 mb-10">{translations.proyect.title}</h2>
             </div>
@@ -120,7 +120,7 @@ const Proyectos = () => {
                 onPageChange={handlePaginaCambio}
                 containerClassName="my-8 mx-auto flex justify-center items-center"
                 activeClassName={`relative block rounded-full px-2 py-2 m-3 text-white font-semibold transition-all duration-300  ${lightMode ? 'bg-blue-300' : 'bg-blue-100'}`}
-                pageLinkClassName={`px-3 py-2 m-3 transition duration-300 text-black rounded-full ${lightMode ? 'hover:bg-blue-300' : 'hover:bg-blue-100'}`}
+                pageLinkClassName={`px-3 py-2 m-3 transition duration-300 text-black rounded-full hidden md:block ${lightMode ? 'hover:bg-blue-300' : 'hover:bg-blue-100'}`}
                 previousClassName={`rounded-full px-4 py-2 text-black font-semibold  transition duration-300 m-5 ${lightMode ? 'hover:bg-blue-500 bg-blue-300' : 'hover:bg-blue-300 bg-blue-100'}`}
                 nextClassName={`rounded-full px-4 py-2 text-black font-semibold bg-blue-100 transition duration-300 m-5 ${lightMode ? 'hover:bg-blue-500 bg-blue-300' : 'hover:bg-blue-300 bg-blue-100'}`}
                 disabledClassName="opacity-50 cursor-not-allowed"

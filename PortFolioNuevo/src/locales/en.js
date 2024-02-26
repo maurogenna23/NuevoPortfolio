@@ -1,4 +1,3 @@
-// locales/en.js
 const enTranslations = {
     home: {
         hello: 'HI THERE!',

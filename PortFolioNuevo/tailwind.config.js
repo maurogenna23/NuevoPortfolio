@@ -16,7 +16,7 @@ module.exports = {
         linkedin: '#0A66C2',
       },
       animation: {
-        'expand': 'expand 3s ease-out 0.5s', // Personaliza la animación expand
+        'expand': 'expand 3s ease-out 0.5s',
       },
       keyframes: {
         expand: 'expand 3s ease-out',

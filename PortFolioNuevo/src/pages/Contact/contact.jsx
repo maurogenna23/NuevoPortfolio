@@ -3,7 +3,6 @@ import { useForm, ValidationError } from '@formspree/react';
 import Image from 'next/image';
 import imagen from '../../../public/assets/contact.png';
 import video from '../../../public/assets/contact.mp4';
-import styles from './contact.module.css';
 import { useLanguage } from '../../contexts/LanguageContext';
 import enTranslations from '../../locales/en';
 import esTranslations from '../../locales/es';
@@ -17,7 +16,7 @@ function ContactForm() {
 
     if (state.succeeded) {
         return (
-            <div className='flex flex-col-reverse lg:flex-row mt-10 lg:mt-40'>
+            <div className='flex flex-col-reverse lg:flex-row p-2 mt-40 mb-40'>
                 <div className="w-full lg:w-1/2 p-2 flex items-center justify-center animated animate__fadeIn">
                     <div className={`max-w-3xl p-8 shadow-xl w-full border rounded-md text-center ${lightMode ? 'bg-black bg-opacity-80' : 'bg-white'}`}>
                         <p className={`text-4xl mb-4 ${lightMode ? ' text-green-400' : 'text-green-600'}`}>{translations.contact.paragraph1}</p>
@@ -41,8 +40,8 @@ function ContactForm() {
 
                 <div className="w-full lg:w-1/2 flex items-center justify-center">
                     <video
-                        width="95%"  // Cambiado a 100% para que se ajuste al ancho del contenedor
-                        height="auto" // Auto para mantener la proporción original
+                        width="95%"
+                        height="auto"
                         className='rounded-full shadow-lg shadow-black/5 hover:shadow-black/30'
                         autoPlay
                         loop
@@ -58,11 +57,11 @@ function ContactForm() {
     }
 
     return (
-        <div className='flex flex-col-reverse lg:flex-row mt-10 lg:mt-40'>
-            <div className="w-full lg:w-1/2 p-2 flex items-center justify-center">
+        <div className='flex flex-col-reverse lg:flex-row p-2 mt-40 mb-40'>
+            <div className="w-full lg:w-1/2 flex items-center justify-center">
                 <form
                     onSubmit={handleSubmit}
-                    className={`max-w-3xl p-8 shadow-xl w-full border rounded-md ${lightMode ? 'bg-black bg-opacity-80' : 'bg-white'}`}
+                    className={`max-w-3xl p-8 mt-10 shadow-xl w-full border rounded-md ${lightMode ? 'bg-black bg-opacity-80' : 'bg-white'}`}
                 >
                     <h2 className="text-4xl mb-10 font-bold text-green-400">
                         {translations.contact.title}
@@ -160,8 +159,8 @@ function ContactForm() {
 
             <div className="w-full lg:w-1/2 flex items-center justify-center">
                 <video
-                    width="95%"  // Cambiado a 100% para que se ajuste al ancho del contenedor
-                    height="auto" // Auto para mantener la proporción original
+                    width="95%"
+                    height="auto"
                     className='rounded-full shadow-lg shadow-black/5 hover:shadow-black/30'
                     autoPlay
                     loop

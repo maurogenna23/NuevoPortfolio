@@ -1,8 +1,7 @@
 .containerAbout {
     width: 100%;
-    /* Cambiamos el ancho al 100% para ocupar todo el ancho disponible */
+
     max-width: 800px;
-    /* Establecemos un ancho máximo para evitar que crezca demasiado en pantallas grandes */
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -17,25 +16,20 @@
     align-items: center;
     border-radius: 10px;
     height: auto;
-    /* Cambiamos la altura a "auto" para adaptarse al contenido */
 }
 
 .textContainer {
     background-color: #40916c;
     padding: 5%;
     margin-right: 0;
-    /* Eliminamos el margen derecho para que ocupe todo el ancho en pantallas pequeñas */
     margin-bottom: 20px;
-    /* Agregamos un margen inferior para separar el texto de la imagen */
     border-radius: 15px;
     color: white;
 }
 
 .imagen {
     position: relative;
-    /* Cambiamos la posición a "relative" para que no se salga del flujo normal del contenido */
     max-width: 100%;
-    /* Ajustamos la imagen al ancho del contenedor */
 }
 
 .imagen img {
@@ -66,14 +60,12 @@
 .italiano {
     background-color: #2d6a4f;
     width: 30%;
-    /* Ajustamos el ancho al 100% para que ocupe todo el ancho disponible */
     padding: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /* Agregamos un margen inferior para separar los botones */
 }
 
 .btn {
@@ -89,13 +81,10 @@
     font-weight: bold;
     cursor: pointer;
     position: relative;
-    /* z-index: 1; */
     overflow: hidden;
 }
 
-/* Los estilos de hover y el pseudo-elemento :after se mantienen igual */
 
-/* Media Queries para pantallas pequeñas (máximo 768px) */
 @media (max-width: 768px) {
     .containerAbout {
         padding-top: 30%;

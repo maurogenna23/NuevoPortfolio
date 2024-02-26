@@ -12,8 +12,8 @@ const About = () => {
     const translations = currentLanguage === 'en' ? enTranslations : esTranslations;
 
     return (
-        <div className={` py-12 p-2 mt-32 mb-60 `}>
-            <div className={`container border rounded-md mx-auto p-10 px-6 rounded-lg shadow-md ${lightMode ? 'bg-black bg-opacity-80 text-white' : ' bg-white text-black'}`}>
+        <div className="p-2 mt-40 mb-40" >
+            <div className={`container border  mx-auto p-10 px-6 rounded-lg shadow-md ${lightMode ? 'bg-black bg-opacity-80 text-white' : ' bg-white text-black'}`}>
                 <h2 className="text-4xl font-bold text-center text-green-400 mb-24">{translations.about.title}</h2>
                 <div className="flex flex-col lg:flex-row justify-center items-center">
                     <div className="lg:w-1/2 lg:mb-0">

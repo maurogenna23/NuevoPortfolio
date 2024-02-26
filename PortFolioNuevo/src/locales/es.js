@@ -1,4 +1,3 @@
-// locales/es.js
 const esTranslations = {
     home: {
         hello: 'HOLA!',
@@ -71,7 +70,6 @@ const esTranslations = {
         Portfolio: 'Portafolio'
     }
 
-    // ... otras traducciones
 };
 
 export default esTranslations;

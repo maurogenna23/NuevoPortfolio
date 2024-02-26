@@ -13,22 +13,19 @@ const Certificaciones = () => {
     const { currentLanguage } = useLanguage();
     const translations = currentLanguage === 'en' ? enTranslations : esTranslations;
 
-    // Enlaces para los certificados de SoyHenry
     const soyHenryCertificateLinks = [
         'https://certificates.soyhenry.com/new-cert?id=2d7d15494aa73c61d38dac52113fef78b6f90f030e80dcdc774c145710c28e87',
         'https://certificates.soyhenry.com/new-cert?id=b6e3c6bf0f3e079d7e7a3f7e341de05d7e4ba1e768a386ce3a7bbd8b28def4a7',
-        // Agrega más enlaces según sea necesario
     ];
 
-    // Imágenes para nextU
     const soyHenryImages = [
         '/assets/imagen5.png',
         '/assets/imagen6.png',
     ];
 
     return (
-        <div className="text-white py-12 mt-32 mb-60 ">
-            <div className={`container mx-auto p-2`}>
+        <div className="p-2 mt-40 mb-40" >
+            <div className={`container mx-auto`}>
                 <h2 className="text-4xl font-bold text-center text-green-400 mb-24">{translations.certificates.title}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Section for nextU images */}

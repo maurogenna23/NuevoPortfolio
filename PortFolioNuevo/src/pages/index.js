@@ -21,7 +21,6 @@ const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Mostrar el botón "Back to Top" cuando se desplaza más de 400 píxeles hacia abajo
       if (window.scrollY > 1000) {
         setShowBackToTop(true);
       } else {
@@ -29,22 +28,18 @@ const Home = () => {
       }
     };
 
-    // Agregar el event listener para el scroll
     window.addEventListener('scroll', handleScroll);
 
-    // Remover el event listener cuando el componente se desmonta
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const handleBackToTop = () => {
-    // Desplazar la página al inicio
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleHireMeClick = () => {
-    // Desplazar la página a la sección de contacto
     const contactSection = document.getElementById('Contact');
     window.scrollTo({ top: contactSection.offsetTop, behavior: 'smooth' });
   };
@@ -100,7 +95,7 @@ const Home = () => {
 
       <hr className={`w-4/5 mx-auto ${lightMode ? 'border-t-2 border-gray-700 bg-gray-800' : 'border-t-2 border-gray-300 bg-gray-100'
         }`} />
-      <section id='about' className='mt-60 mb-60'>
+      <section id='about' >
         <About />
       </section>
       <hr className={`w-4/5 mx-auto ${lightMode ? 'border-t-2 border-gray-700 bg-gray-800' : 'border-t-2 border-gray-300 bg-gray-100'
@@ -126,7 +121,7 @@ const Home = () => {
 
       <div className="hidden lg:block">
         {showBackToTop && (
-          <button className="fixed bottom-3 right-5 p-2 bg-blue-500 text-white rounded-full cursor-pointer transition duration-300 animated animate__fadeIn hover:bg-blue-700" onClick={handleBackToTop}>
+          <button className="fixed bottom-3 z-40 right-5 p-2 bg-blue-500 text-white rounded-full cursor-pointer transition duration-300 animated animate__fadeIn hover:bg-blue-700" onClick={handleBackToTop}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="w-6 h-6">
               <circle cx="12" cy="12" r="10" />
               <path d="M16 12l-4-4-4 4M12 16V9" />

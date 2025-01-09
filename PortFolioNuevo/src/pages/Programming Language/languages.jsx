@@ -1,38 +1,31 @@
-import React from "react";
-import imagen1 from "../../../public/assets/html.jpg";
-import imagen2 from "../../../public/assets/css3.jpg";
-import imagen3 from "../../../public/assets/javascript.jpg";
-import imagen4 from "../../../public/assets/node.jpg";
-import imagen5 from "../../../public/assets/postgres.jpg";
-import imagen6 from "../../../public/assets/react.jpg";
-import imagen7 from "../../../public/assets/redux.jpg";
-import imagen8 from "../../../public/assets/bootstrap.jpg";
-import imagen9 from "../../../public/assets/git.jpg";
-import imagen10 from "../../../public/assets/nextjs.png"
-import imagen11 from "../../../public/assets/Tailwind.png"
-import Image from "next/image";
-import styles from "./language.module.css";
-import { useLightMode } from '../../LightModeContext';
-import { useLanguage } from '../../contexts/LanguageContext';
+import React from 'react';
+import git from '../../../public/assets/git.jpg';
+import react from '../../../public/assets/react.jpg';
+import nextJs from '../../../public/assets/nextjs.png';
+import materialUi from '../../../public/assets/material-ui.jpg';
+import typescript from '../../../public/assets/typescript.png';
+import nestJs from '../../../public/assets/nest.png';
+import sql from '../../../public/assets/sql.png';
+import Image from 'next/image';
+import styles from './language.module.css';
+import {useLightMode} from '../../LightModeContext';
+import {useLanguage} from '../../contexts/LanguageContext';
 import enTranslations from '../../locales/en';
 import esTranslations from '../../locales/es';
 
 const Languages = () => {
-    const { lightMode, toggleLightMode } = useLightMode();
-    const { currentLanguage } = useLanguage();
-    const translations = currentLanguage === 'en' ? enTranslations : esTranslations;
+    const {lightMode, toggleLightMode} = useLightMode();
+    const {currentLanguage} = useLanguage();
+    const translations =
+        currentLanguage === 'en' ? enTranslations : esTranslations;
 
     const technologies = [
-        { name: "HTML", image: imagen1 },
-        { name: "CSS3", image: imagen2 },
-        { name: "JAVASCRIPT", image: imagen3 },
-        { name: "NEXT JS", image: imagen10 },
-        { name: "TAILWIND CSS", image: imagen11 },
-        { name: "NODE JS", image: imagen4 },
-        { name: "POSTGRE SQL", image: imagen5 },
-        { name: "REACT JS", image: imagen6 },
-        { name: "REDUX", image: imagen7 },
-        { name: "BOOTSTRAP", image: imagen8 },
+        {name: 'REACT', image: react},
+        {name: 'NEXT JS', image: nextJs},
+        {name: 'MATERIAL UI', image: materialUi},
+        {name: 'TYPESCRIPT', image: typescript},
+        {name: 'NEST JS', image: nestJs},
+        {name: 'SQL', image: sql}
     ];
 
     return (
@@ -47,18 +40,21 @@ const Languages = () => {
                     {technologies.map((tech, index) => (
                         <div
                             key={index}
-                            className={`${lightMode ? styles.cardLight_container : styles.card_container
-                                }`}
+                            className={`${
+                                lightMode ? styles.cardLight_container : styles.card_container
+                            }`}
                         >
                             <div
-                                className={`${lightMode ? styles.cardLight : styles.card
-                                    } flex flex-col items-center`}
+                                className={`${
+                                    lightMode ? styles.cardLight : styles.card
+                                } flex flex-col items-center`}
                             >
                                 <div
-                                    className={`${lightMode ? styles.lightMode : styles.img_content
-                                        }`}
+                                    className={`${
+                                        lightMode ? styles.lightMode : styles.img_content
+                                    }`}
                                 >
-                                    <Image src={tech.image} alt="" />
+                                    <Image src={tech.image} alt=""/>
                                 </div>
                                 <div className={styles.content}>
                                     <p className={styles.heading}>{tech.name}</p>
@@ -67,17 +63,20 @@ const Languages = () => {
                         </div>
                     ))}
                 </div>
-                <div className={`${lightMode ? styles.cardLight_container : styles.card_container
-                    }`}>
+                <div
+                    className={`${
+                        lightMode ? styles.cardLight_container : styles.card_container
+                    }`}
+                >
                     <div
-                        className={`${lightMode ? styles.cardLight : styles.card
-                            } flex flex-col items-center`}
+                        className={`${
+                            lightMode ? styles.cardLight : styles.card
+                        } flex flex-col items-center`}
                     >
                         <div
-                            className={`${lightMode ? styles.lightMode : styles.img_content
-                                }`}
+                            className={`${lightMode ? styles.lightMode : styles.img_content}`}
                         >
-                            <Image src={imagen9} alt="Git" />
+                            <Image src={git} alt="Git"/>
                         </div>
                         <div className={styles.content}>
                             <p className={styles.heading}>GIT</p>

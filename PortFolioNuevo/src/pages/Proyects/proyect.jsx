@@ -37,7 +37,7 @@ const Proyectos = () => {
       id: 2,
       titulo: 'Captiview',
       descripcion: translations.proyect.proyect1.descripcion,
-      link: 'https://bambu-revelazquez.vercel.app/',
+      link: 'https://www.captiview.com/',
       img: Captiview,
     },
     {
@@ -106,17 +106,14 @@ const Proyectos = () => {
               </span>
             )}
           </p>
-
-          {proyecto.titulo !== 'Captiview' && (
-            <div className="flex justify-center items-center">
-              <a
-                href={proyecto.link}
-                className="inline-block m-5 px-4 py-2 text-white bg-green-600 rounded hover:bg-green-900 transition duration-300"
-              >
-                {translations.proyect.ButtonA}
-              </a>
-            </div>
-          )}
+          <div className="flex justify-center items-center">
+            <a
+              href={proyecto.link}
+              className="inline-block m-5 px-4 py-2 text-white bg-green-600 rounded hover:bg-green-900 transition duration-300"
+            >
+              {translations.proyect.ButtonA}
+            </a>
+          </div>
         </div>
       ))}
 
